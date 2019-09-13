@@ -1,0 +1,529 @@
+﻿@keyframes toRightFromLeft {
+    49% {
+        -webkit-transform: translate(100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(-100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 24px;
+}
+.size {
+    width: 1024px;
+    margin: 0 auto; 
+}
+.headBox {
+    background: #fff;
+    -webkit-box-shadow: 0 0 50px -5px #ea8025;
+    -moz-box-shadow: 0 0 50px -5px #ea8025;
+    box-shadow: 0 0 50px -5px #ea8025;
+}
+.smoothieLogo {
+    float: left;
+    padding: 10px 30px;
+    width: 120px;
+}
+.smoothieLogo img{
+    width: 100%;
+}
+.rwdMenu {
+    display: none;
+ }
+.topMenu {
+    float: left;
+    display: block;
+}
+.topMenu ul {
+    float: left;
+}
+.topMenu li {
+    float: left;
+    padding: 35px 40px;
+    box-sizing: border-box;
+}
+.topMenu li a {
+    text-decoration: none;
+    color: #ea8025;
+    line-height: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.topMenu li:hover {
+    text-decoration-line: underline;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 51;
+    top: 0;
+}
+.banerBox {
+    margin: 150px 0 130px;
+}
+.banerBox img {
+    width: 100%;
+}
+.mainBox {
+    padding-top: 120px;
+    margin-bottom: 100px;
+}
+.mainBox .item {
+    float: left;
+    width: 50%;
+    margin: 40px 0;
+    height: 128px;
+    overflow: hidden;
+}
+.mainBox .item a {
+   text-decoration: none;
+   color: #000;
+}
+.mainBox .icon {
+    float: left;
+    font-size: 45px;
+    padding: 24px 19px;
+    border: solid 3px #ea8025;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 35px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    color: #ea8025;
+}
+.mainBox .text {
+    width: 60%;
+    float: left;
+    margin: 0 15px;
+}
+.mainBox .text p {
+    float: left;
+    width: 100%;
+    line-height: 23px;
+    font-size: 18px;
+    padding: 10px 20px 0;
+}
+.mainBox .text .title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0;
+    color: #ea8025;
+    text-transform: uppercase;
+}
+.mainBox .item:hover {
+    color: #ea8025;
+    -webkit-transition: color 0.3s; 
+    transition: color 0.3s;
+}
+.mainBox .item:hover .icon {
+    color: #ea8025;
+    border: solid 3px #ea8025;
+    -webkit-transition: color 0.3s; 
+    transition: color 0.3s;
+    -webkit-animation: toRightFromLeft 0.3s forwards;
+    -moz-animation: toRightFromLeft 0.3s forwards;
+    animation: toRightFromLeft 0.3s forwards;
+}
+.mainBox .item:hover .text p {
+    color: #ea8025;
+    -webkit-transition: color 0.3s; 
+    transition: color 0.3s;
+}
+.mainBox .item:hover .text .title {
+    color: #000;
+    -webkit-transition: color 0.3s; 
+    transition: color 0.3s;
+}
+.contactBox {
+    padding-top: 130px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea8025+1,e8ac7a+100 */
+    background: #ea8025; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ea8025 1%, #e8ac7a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ea8025 1%,#e8ac7a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ea8025 1%,#e8ac7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea8025', endColorstr='#e8ac7a',GradientType=1 ); /* IE6-9 */
+}
+.contactBox .question {
+    font-size: 35px;
+    width: 100%;
+    float: left;
+    line-height: 65px;
+    margin: 0 10px 20px;
+}
+.contactBox .question span {
+    color: #117204;
+}
+.contactBox .question p.indent {
+    padding-left: 210px;
+}
+.contactBox .form {
+    width: 50%;
+    float: right;
+    margin: 50px 0 120px;
+}
+.contactBox .form .inputMail {
+    width: 260px;
+    height: 39px;
+    font-size: 22px;
+    padding: 0 5px;
+    outline: none;
+    background: bottom;
+    border: solid 1px #117204;
+    color: #117204;
+    box-sizing: border-box;
+}
+.contactBox .form .inputMail:focus {
+    outline: 3px solid #117204;
+    border-color: transparent;
+}
+.contactBox .form .send {
+    width: 175px;
+    height: 41px;
+    font-size: 20px;
+    background: #117204;
+    border: none;
+    box-sizing: border-box;
+    margin: 5px 0 0 -6px;
+}
+.contactBox .form .send:focus {
+    outline: 2px dotted #117204;
+    outline-offset: 4px;
+}
+::placeholder { /* Firefox, Chrome, Opera */ 
+    font-size: 18px;
+    color: #117204;
+} 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    font-size: 18px;
+    color: #117204;
+} 
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    font-size: 18px;
+    color: #117204;
+} 
+.aboutBox {
+    padding: 160px 0;
+}
+.aboutBox .item {
+    height: 280px;
+}
+.aboutBox .image {
+    width: 30%;
+    height: 257px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    padding: 0 40px 0 10px;
+    box-sizing: border-box;
+}
+.aboutBox .image img {
+    width: 100%;
+}
+.aboutBox .text {
+    width: 70%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 244px;
+    overflow: hidden;
+}
+.aboutBox span {
+    font-size: 20px;
+    padding: 18px; 
+}
+.aboutBox p {
+    font-size: 18px;
+    padding: 18px; 
+    line-height: 22px;
+}
+.aboutBox .title {
+    font-size: 25px;
+    color: #ea8025;
+    width: 100%;
+    display: block;
+    padding: 0 0 20px;
+    text-transform: uppercase;
+}
+.aboutBox .right {
+    float: right
+}
+.footerBox {
+    color: #ea8025;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    padding: 30px 0;
+}
+
+.line {
+    height: 10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea8025+1,e8ac7a+100 */
+    background: #ea8025; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ea8025 1%, #e8ac7a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ea8025 1%,#e8ac7a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ea8025 1%,#e8ac7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea8025', endColorstr='#e8ac7a',GradientType=1 ); /* IE6-9 */
+}
+/* --- RWD ------------------------------------------- */
+@media only screen and (max-width: 1023px) {
+    .size {
+        width: 996px;
+    }
+    .topMenu li {
+        padding: 35px 38px;
+    }
+}
+@media only screen and (max-width: 995px) {
+    .size {
+        width: 768px;
+    }
+    .smoothieLogo {
+        padding: 5px 20px;
+    }
+    .topMenu li {
+        padding: 25px 20px;
+    }
+    .topMenu li a {
+        font-size: 20px;
+    }
+    .mainBox .item {
+        float: none;
+        width: 600px;
+        margin: 20px auto 70px;
+    }
+    .contactBox .question {
+        font-size: 30px;
+        width: 650px;
+        line-height: 55px;
+    }
+    .contactBox .form {
+        width: 500px;
+    }
+    .aboutBox {
+        padding: 160px 0 70px;
+    }
+    .aboutBox .item {
+        height: 225px;
+    }
+    .aboutBox .image {
+        height: 175px;
+    }
+    .aboutBox .text {
+        height: 185px;
+    }
+    .aboutBox .title {
+        font-size: 22px;
+    }
+    .aboutBox span {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .size {
+        width: 480px;
+    }
+    .headBox .topMenu {
+        display: none;
+    }
+    .headBox .rwdMenu {
+        display: block;
+        width: 44px;
+        height: 36px;
+        border-bottom: solid 6px #ea8025;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .headBox .rwdMenu:before {
+        content: '';
+        border-bottom: solid 6px #ea8025;
+        position: absolute;
+        right: 0;
+        top: -12px;
+        width: 44px;
+        height: 36px;
+    }
+    .headBox .rwdMenu:after {
+        border-bottom: solid 6px #ea8025;
+        position: absolute;
+        right: 0;
+        top: -24px;
+        content: '';
+        width: 44px;
+        height: 36px;
+    }
+    .headBox .topMenu + ul {
+        display: none;
+    }
+    .headBox ul {
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        top: 108px;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .headBox li {
+        float: none;
+        text-align: center;
+        padding: 15px 15px;
+        background-color: #ea8025; 
+    }
+    .headBox li a {
+        line-height: 30px;
+        padding: 15px 15px;
+        color: #000;   
+    }
+    .headBox li:hover {
+        background: #ef9f5d;
+        text-decoration-line: none;
+    }
+    .headBox li:hover a {
+        color: #636363;  
+    }
+    .headBox ul .active {
+        background: black;
+        height: 30px;
+        
+    }
+    .headBox ul li a {
+        line-height: 30px;   
+        padding: 15px 0;
+    }
+    .mainBox .item {
+        width: 450px;
+        height: 90px;
+        margin: 20px auto 50px;
+    }
+    .mainBox .icon {
+        font-size: 40px;
+        padding: 17px 11px;
+        margin-left: 15px;
+        width: 80px;
+        height: 80px;
+    }
+    .mainBox .text {
+        width: 325px;
+    }
+    .mainBox .text .title {
+        font-size: 22px;
+    }
+    .mainBox .text p {
+        line-height: 20px;
+        font-size: 16px;
+        padding: 10px 15px 0;
+    }
+    .contactBox .question {
+        font-size: 22px;
+        width: 450px;
+        line-height: 35px;
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .contactBox .question p.indent {
+        padding-left: 145px;
+    }
+    .contactBox .form {
+        width: 450px;
+        float: none;
+        margin: 10px auto 100px;
+    }
+    .contactBox .form .inputMail {
+        width: 200px;
+        font-size: 20px;
+    }
+    .aboutBox {
+        padding: 100px 0 45px;
+    }
+    .aboutBox .item {
+        height: 350px;
+    }
+    .aboutBox .image {
+        height: 115px;
+        width: 100%;
+        float: none;
+        margin: 20px auto;
+        padding: 0;
+    }
+    .aboutBox .text {
+        height: 197px;
+        width: 100%;
+        float: none;
+    }
+    .aboutBox span {
+        padding: 0;
+    }
+    .aboutBox p {
+        padding: 10px 0;
+    }
+    
+}
+@media only screen and (max-width: 479px) {
+    .size {
+        width: 320px;
+    }
+    .mainBox .item {
+        width: 300px;
+        height: 250px;
+        margin: 0 auto 15px;
+    }
+    .mainBox .icon {
+        font-size: 45px;
+        padding: 24px 19px;
+        float: none;
+        margin: 5px auto;
+        width: 100px;
+        height: 100px;
+    }
+    .mainBox .text {
+        width: 300px;
+        margin: 0 auto;
+        float: none;
+    }
+    .mainBox .text .title {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .mainBox .text p {
+        text-align: center;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    .contactBox .question {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+    .contactBox .question p.indent {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .contactBox .form {
+        width: 300px;
+        margin: 40px auto;
+    }
+    .contactBox .form .inputMail {
+        width: 240px;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+    .contactBox .form .send {
+        width: 300px;
+        font-size: 18px;
+        margin: 30px auto 50px;
+    }
+}
